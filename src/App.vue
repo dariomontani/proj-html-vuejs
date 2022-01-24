@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
 @import "./assets/scss/style.scss";
 
 #app {

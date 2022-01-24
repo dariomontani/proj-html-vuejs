@@ -1,18 +1,24 @@
 <template>
   <header>
       <Navbar />
+      <Jumbo />
   </header>
 </template>
 
 <script>
 import Navbar from './Navbar.vue';
+import Jumbo from './Jumbo.vue';
+
 
 export default {
-  components: { Navbar },
-    name: "Header"
+  name: "Header",
+  components: {
+    Navbar,
+    Jumbo,
+  },
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
 
 </style>

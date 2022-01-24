@@ -25,9 +25,9 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
     .navbar{
-        background-color: #1B1B1B;
+        background-color: black;
         color: white;
         padding-top: 1em;
         display: flex;
@@ -38,7 +38,7 @@ export default {
                 background-color: #EE2852;
                 border: #EE2852;
                 color: #FFFFFF;
-                padding: 1.5em;
+                padding: 1em;
             }
         }
         .center{

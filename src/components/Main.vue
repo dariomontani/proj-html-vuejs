@@ -1,13 +1,27 @@
 <template>
-  <main></main>
+  <main>
+    <Cards />
+    <Cit />
+    <Specials />
+  </main>
 </template>
 
 <script>
+import Cards from './Cards.vue';
+import Cit from './Cit.vue';
+import Specials from './Specials.vue';
+
+
 export default {
-    name: "Main"
+    name: "Main",
+    components: {
+    Cards,
+    Cit,
+    Specials,
+  },
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scope>
 
 </style>
