@@ -1,10 +1,17 @@
 <template>
-  <div class="cit">
-      <img src="..\assets\img\h3-testimonials-bckgrnd.jpg" alt="">
-      <div class="top"><h2>"</h2></div>
-      <div class="center"><h2>"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h2></div>
-      <div class="bottom"><p>WASHINGTON POST 2018</p></div>
-  </div>
+    <div class="cit">
+        <img src="..\assets\img\h3-testimonials-bckgrnd.jpg" alt="">
+        <div class="top">
+            <h2>"</h2>
+        </div>
+        <div class="center">
+            <h2>"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h2>
+        </div>
+        <div class="bottom">
+            <p>WASHINGTON POST 2018</p>
+        </div>
+        <img class="pizzaLogo" src="..\assets\img\svg-4.svg" alt="">
+    </div>
 </template>
 
 <script>
@@ -37,6 +44,11 @@ export default {
             position: absolute;
             max-width: 100%;
             z-index: -1;
+        }
+        .pizzaLogo{
+            position: absolute;
+            right: 1em;
+            bottom: 2em;
         }
     }
 </style>
