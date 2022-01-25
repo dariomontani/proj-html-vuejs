@@ -3,6 +3,10 @@
     <Cards />
     <Cit />
     <Specials />
+    <BuildPizza />
+    <People />
+    <Clients />
+    <BestPizza />
   </main>
 </template>
 
@@ -10,7 +14,10 @@
 import Cards from './Cards.vue';
 import Cit from './Cit.vue';
 import Specials from './Specials.vue';
-
+import BuildPizza from './BuildPizza.vue';
+import People from './People.vue';
+import Clients from './Clients.vue';
+import BestPizza from './BestPizza.vue';
 
 export default {
     name: "Main",
@@ -18,6 +25,10 @@ export default {
     Cards,
     Cit,
     Specials,
+    BuildPizza,
+    People,
+    Clients,
+    BestPizza,
   },
 }
 </script>
