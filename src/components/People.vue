@@ -23,10 +23,10 @@ export default {
         }
         .pizzaLogo{
             position: absolute;
-            width: 2em;
+            width: 2.6em;
             background-color: #F7F7F2;
             border-radius: 50%;
-            padding: 0.5em;
+            padding: 0.8em;
             right: 1em;
             bottom: 2em;
         }

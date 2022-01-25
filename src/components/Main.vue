@@ -7,6 +7,8 @@
     <People />
     <Clients />
     <BestPizza />
+    <TypeOfPizza />
+    <DelishPizza />
   </main>
 </template>
 
@@ -18,6 +20,8 @@ import BuildPizza from './BuildPizza.vue';
 import People from './People.vue';
 import Clients from './Clients.vue';
 import BestPizza from './BestPizza.vue';
+import TypeOfPizza from './TypeOfPizza.vue';
+import DelishPizza from './DelishPizza.vue';
 
 export default {
     name: "Main",
@@ -29,6 +33,8 @@ export default {
     People,
     Clients,
     BestPizza,
+    TypeOfPizza,
+    DelishPizza,
   },
 }
 </script>

@@ -99,6 +99,7 @@ export default {
                 width: 155%;
                 text-align: right;
                 ul li img{
+                    margin-right: 0.1em;
                     background-color: #F7F7F2;
                     padding: 1em;
                     border-radius: 50%;

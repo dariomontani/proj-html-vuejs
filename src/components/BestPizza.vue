@@ -44,6 +44,9 @@ export default {
         }
         .pizzaLogo{
             position: absolute;
+            background-color: #F7F7F2;
+            border-radius: 50%;
+            padding: 1em;
             right: 1em;
             bottom: 2em;
         }
