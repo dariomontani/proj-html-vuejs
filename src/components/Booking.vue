@@ -40,6 +40,7 @@ export default {
             height: 60px;
             width: 200px;
             font-family: Arial, Helvetica, sans-serif;
+            color: #B7903C;
         }
         .forAt{
             padding: 0 3em;
