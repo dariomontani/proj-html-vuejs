@@ -4,7 +4,7 @@
             <button><h4>ORDER ONLINE</h4></button>
         </div>
         <div class="center">
-            <div class="home"><img src="..\assets\img\svg-0.svg" alt=""><span>HOME</span></div> 
+            <div class="home"><img class="moustache" src="..\assets\img\svg-0.svg" alt=""><span>HOME</span></div> 
             <div>PAGES</div>
             <div>MENU</div>
             <img class="logo" src="..\assets\img\h5-logo-divided-header.png" alt="">
@@ -14,16 +14,18 @@
         </div>
         <div class="right">
             <div class="cart"><img src="..\assets\img\svg-1.svg" alt="">CART</div>
-            <div class="search">SEARCH</div>
+            <div class="search"><i class="fas fa-search"></i>SEARCH</div>
         </div>
     </div>
 </template>
 
 <script>
+
 export default {
-    name:"Navbar"
+    name:"Navbar",
 }
 </script>
+
 
 <style lang="scss" scope>
     .navbar{
@@ -45,6 +47,12 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            .moustache{
+                width: 2em;
+            }
+            span{
+                padding-left: 5px;
+            }
             .home{
                 display: flex;
                 padding-right: 2em;
@@ -61,6 +69,7 @@ export default {
             display: flex;
             .cart img{
                 filter: invert(1);
+                padding-right: 5px;
             }
             div{
                 padding: 0 1em;

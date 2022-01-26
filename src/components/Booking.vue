@@ -1,11 +1,11 @@
 <template>
     <div class="booking">
         <img class="background" src="..\assets\img\h3-background-img-3.jpg" alt="">
-        <div class="whiteSpace"><p>1 Person</p><p>O</p></div>
+        <div class="whiteSpace"><p>1 Person</p><p><i class="fas fa-user-friends"></i></p></div>
         <div class="forAt"><p>FOR</p></div>
-        <div class="whiteSpace"><p>11/29/2020</p><p>O</p></div>
+        <div class="whiteSpace"><p>11/29/2020</p><p><i class="fas fa-calendar"></i></p></div>
         <div class="forAt"><p>AT</p></div>
-        <div class="whiteSpace"><p>7:00 pm</p><p>O</p></div>
+        <div class="whiteSpace"><p>7:00 pm</p><p><i class="fas fa-clock"></i></p></div>
         <div class="button">
             <button>BOOK A TABLE</button>
         </div>

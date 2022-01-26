@@ -1,8 +1,9 @@
 <template>
     <div class="cit">
         <img src="..\assets\img\h3-testimonials-bckgrnd.jpg" alt="">
+        <button class="prev"><strong>PREV</strong></button>
         <div class="top">
-            <h2>"</h2>
+            <h2><i class="fas fa-quote-left"></i></h2>
         </div>
         <div class="center">
             <h2>"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</h2>
@@ -10,6 +11,7 @@
         <div class="bottom">
             <p>WASHINGTON POST 2018</p>
         </div>
+        <button class="next"><strong>NEXT</strong></button>
         <img class="pizzaLogo" src="..\assets\img\svg-4.svg" alt="">
     </div>
 </template>
@@ -29,6 +31,34 @@ export default {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        .prev{
+            transform: rotate(90deg);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            border: 1px solid white;
+            background-color: white;
+            border-top-left-radius: 100% 200%;
+            border-top-right-radius: 100% 200%;
+            padding: 0.5em 1.5em;
+            color: #EE2852;
+        }
+        .next{
+            transform: rotate(270deg);
+            position: absolute;
+            top: 50%;
+            right: 0;
+            border: 1px solid white;
+            background-color: white;
+            border-top-left-radius: 100% 200%;
+            border-top-right-radius: 100% 200%;
+            padding: 0.5em 1.5em;
+            color: #EE2852;
+        }
+        .top h2{
+            font-size: 3.5em;
+            color: #B7903C;
+        }
         div{
             text-align: center;
         }

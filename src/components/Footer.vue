@@ -5,13 +5,14 @@
         <div class="find">
           <h3 class="brown">FIND OUR RESTAURANTS</h3>
           <ul>
-            <li class="arial gray">
-              1614 E.Bell Rd #104. <br>
+            <li v-for="(restaurant, index) in restaurants" :key="index" class="arial gray">
+              {{restaurant.adress}}
+              <!-- 1614 E.Bell Rd #104. <br>
               Salerno, AZ 85022 <br>
-              &lpar;602&rpar; 867-1010
+              &lpar;602&rpar; 867-1010 -->
             </li>
 
-            <li class="arial gray">
+            <!-- <li class="arial gray">
               204 E.Pizzetta Tommaso <br>
               Salerno, AZ 85022 <br>
               &lpar;358&rpar; 867-1010
@@ -27,7 +28,7 @@
               Corso Itali AA <br>
               Naples, AZ 85022 <br>
               &lpar;989&rpar; 867-1010
-            </li>
+            </li> -->
           </ul>
         </div>
 
@@ -75,7 +76,25 @@
 
 <script>
 export default {
-    name: "Footer"
+    name: "Footer",
+    data(){
+      return {
+        restaurants: [
+          {
+            adress: "1614 E.Bell Rd #104. Salerno, AZ 85022  (602)867-1010"
+          },
+          {
+            adress: "204 E.Pizzetta Tommaso Salerno, AZ 85022 (358)867-1010"
+          },
+          {
+            adress: "Valle Puglia 54 Torre Del Greco AZ 85022 (359)867-1010"
+          },
+          {
+            adress: "Corso Itali AA Naples, AZ 85022 (989)867-1010"
+          }
+        ],
+      }
+    }
 }
 </script>
 
@@ -91,7 +110,8 @@ export default {
     }
     .left{
       width: calc(100% /2);
-      background-color: black;
+      background: linear-gradient(90deg, black (100px - 1px), transparent 1%) center, linear-gradient(black (100px - 1px), transparent 1%) center,#EBEBDE;
+	    background-size: 100px 100px; 
       color: white;
       display: flex;
       flex-direction: column;
@@ -116,6 +136,9 @@ export default {
         justify-content: center;
         .working{
           padding: 0 2em;
+        }
+        .find{
+          width: 25%;
         }
       }
       .down{

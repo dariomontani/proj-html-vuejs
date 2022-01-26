@@ -65,7 +65,8 @@ export default {
             border: 1px solid white;   
             height: 550px;
             width: calc(100% / 2);
-            background-color: black;
+            background: linear-gradient(90deg, black (100px - 1px), transparent 1%) center, linear-gradient(black (100px - 1px), transparent 1%) center,#EBEBDE;
+	        background-size: 100px 100px; 
             display: flex;
             flex-direction: column;
             align-items: center;
