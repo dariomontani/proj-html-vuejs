@@ -14,7 +14,7 @@
         </div>
         <div class="right">
             <div class="cart"><img src="..\assets\img\svg-1.svg" alt="">CART</div>
-            <div class="search"><i class="fas fa-search"></i>SEARCH</div>
+            <div class="search"><i class="fas fa-search" style="margin-right: 5px;"></i>SEARCH</div>
         </div>
     </div>
 </template>
