@@ -51,8 +51,9 @@
               <h5 class="brown">SUNDAY</h5>
               <p class="arial gray">9:00 - 22:00</p>
             </li>
-            <li>
-              <h5 class="brown">FOLLOW US</h5>
+            <li class="special">
+              <h5 class="brown">FOLLOW US:</h5>
+              <i class="fab fa-twitter" style="margin: 0.5em; font-size:0.8em;"></i><i class="fab fa-facebook-f" style="margin: 0.5em; font-size:0.8em;"></i><i class="fab fa-instagram-square" style="margin: 0.5em; font-size:0.8em;"></i><i class="fab fa-linkedin-in" style="margin: 0.5em; font-size:0.8em;"></i>
             </li>
           </ul>
         </div>
@@ -136,6 +137,9 @@ export default {
         justify-content: center;
         .working{
           padding: 0 2em;
+          .special{
+            display: flex;
+          }
         }
         .find{
           width: 25%;

@@ -57,6 +57,7 @@ export default {
         .container{
             position: relative;
             width: calc(100% / 4);
+            cursor: pointer;
             img{
                 width: 100%;
             }

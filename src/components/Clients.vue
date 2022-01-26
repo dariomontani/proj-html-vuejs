@@ -21,6 +21,7 @@ export default {
         padding: 5em;
         img{
             width: 11em;
+            cursor: pointer;
         }
     }
 </style>
