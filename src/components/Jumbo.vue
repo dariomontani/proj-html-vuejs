@@ -1,14 +1,14 @@
 <template>
     <div class="jumbo">
         <div class="urban"><img src="..\assets\img\h3-rev-img-5.png" alt=""></div>
-        <button @click="prev" type="button" class="prev">PREV</button>
+        <button @click="prev" type="button" class="prev"><strong>PREV</strong></button>
         <div class="container">
             <div class="pizza">
                 <img src="../assets/img/h3-rev-img-6.png" alt="">
                 <!-- <img :src="`${images[n]}`" alt=""> -->
             </div>
         </div>
-        <button @click="next" type="button" class="next">NEXT</button>
+        <button @click="next" type="button" class="next"><strong>NEXT</strong></button>
     </div>
 </template>
 
