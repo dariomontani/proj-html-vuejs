@@ -64,8 +64,8 @@ export default {
                 border: 1px solid black;
                 position: absolute;
                 top: 0;
-                width: 349px;
-                height: 240px;
+                width: 100%;
+                height: 100%;
                 background: linear-gradient(90deg, black (8px - 1px), transparent 1%) center, linear-gradient(black (8px - 1px), transparent 1%) center,#EBEBDE;
                 filter: invert(1);
                 background-size: 8px 8px;
