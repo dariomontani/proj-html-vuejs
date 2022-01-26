@@ -35,6 +35,12 @@ export default {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        div, button{
+            cursor: pointer;
+        }
+        img{
+            cursor: default;
+        }
         .left{
             button{
                 background-color: #EE2852;

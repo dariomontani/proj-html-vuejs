@@ -1,11 +1,11 @@
 <template>
     <div class="booking">
         <img class="background" src="..\assets\img\h3-background-img-3.jpg" alt="">
-        <div class="whiteSpace"><p>1 Person</p><p><i class="fas fa-user-friends"></i></p></div>
+        <div class="whiteSpace"><input type="text" placeholder="1 Person"><p><i class="fas fa-user-friends"></i></p></div>
         <div class="forAt"><p>FOR</p></div>
-        <div class="whiteSpace"><p>11/29/2020</p><p><i class="fas fa-calendar"></i></p></div>
+        <div class="whiteSpace"><input type="text" placeholder="11/29/2020"><p><i class="fas fa-calendar"></i></p></div>
         <div class="forAt"><p>AT</p></div>
-        <div class="whiteSpace"><p>7:00 pm</p><p><i class="fas fa-clock"></i></p></div>
+        <div class="whiteSpace"><input type="text" placeholder="7:00 pm"><p><i class="fas fa-clock"></i></p></div>
         <div class="button">
             <button>BOOK A TABLE</button>
         </div>
@@ -41,6 +41,11 @@ export default {
             width: 200px;
             font-family: Arial, Helvetica, sans-serif;
             color: #B7903C;
+            input{
+                width: 90%;
+                border: none;
+                height: 40px;
+            }
         }
         .forAt{
             padding: 0 3em;
@@ -53,6 +58,7 @@ export default {
                 background-color: #EE2852;
                 border: #EE2852;
                 padding: 1.5em 4em;
+                cursor: pointer;
             }
         }
     }

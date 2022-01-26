@@ -55,6 +55,7 @@ export default {
                 z-index: 99;
                 font-size: 0.8em;
                 display: none;
+                cursor: pointer;
             }
             img{
                 width: 100%;

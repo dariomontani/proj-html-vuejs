@@ -42,6 +42,7 @@ export default {
             border-top-right-radius: 100% 200%;
             padding: 0.5em 1.5em;
             color: #EE2852;
+            cursor: pointer;
         }
         .next{
             transform: rotate(270deg);
@@ -54,6 +55,7 @@ export default {
             border-top-right-radius: 100% 200%;
             padding: 0.5em 1.5em;
             color: #EE2852;
+            cursor: pointer;
         }
         .top h2{
             font-size: 3.5em;

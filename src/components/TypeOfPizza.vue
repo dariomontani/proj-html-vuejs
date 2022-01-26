@@ -47,6 +47,8 @@ export default {
         justify-content: space-around;
         .pizza{
             text-align: center;
+            perspective: 100px;
+            cursor: pointer;
             .zoom{
                 width: 9.4em;
             }
@@ -59,6 +61,9 @@ export default {
                 color: #D2401E;
                 font-size: 0.8em;
             }
+        }
+        .pizza:hover img{
+            transform: translateZ(20px);
         }
     }
 </style>
