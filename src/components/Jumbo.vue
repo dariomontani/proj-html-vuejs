@@ -4,8 +4,7 @@
         <button @click="prev" type="button" class="prev"><strong>PREV</strong></button>
         <div class="container">
             <div class="pizza">
-                <img src="../assets/img/h3-rev-img-6.png" alt="">
-                <!-- <img :src="`${images[n]}`" alt=""> -->
+                <img :src="`${images[n]}`" alt="">
             </div>
         </div>
         <button @click="next" type="button" class="next"><strong>NEXT</strong></button>
@@ -20,10 +19,9 @@ export default {
         return{
             n: 0,
             images: [
-                '../assets/img/h3-rev-img-2.png',
-                '../assets/img/h3-rev-img-4.png',
-                '../assets/img/h3-rev-img-6.png',
-                // 'https://picsum.photos/id/237/200/300',
+                require('../assets/img/h3-rev-img-2.png'),
+                require('../assets/img/h3-rev-img-4.png'),
+                require('../assets/img/h3-rev-img-6.png'),
             ],
         }
     },

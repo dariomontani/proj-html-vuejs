@@ -1,41 +1,77 @@
 <template>
     <div class="tipeOfPizza">
-        <div class="pizza">
-            <img class="zoom" src="..\assets\img\h3-product-img-1a-100x100.png" alt="">
-            <p class="namePizza">BISMARK</p>
-            <p class="price">$5.00 - $30.00</p>
+        <div v-for="(pizza, index) in pizzas" :key="index" class="pizza">
+            <img class="zoom" :src="`${pizza.img}`" alt="">
+            <p class="namePizza">{{pizza.type}}</p>
+            <p class="price">{{pizza.price}}</p>
+        </div>
+        <!-- <div class="pizza">
+            <img src="" alt="">
+            <p class="namePizza"></p>
+            <p class="price"></p>
         </div>
         <div class="pizza">
-            <img src="..\assets\img\h3-product-img-2a-150x150.png" alt="">
-            <p class="namePizza">FIORI DI ZUCCA</p>
-            <p class="price">$7.00 - $50.00</p>
+            <img src="" alt="">
+            <p class="namePizza"></p>
+            <p class="price"></p>
         </div>
         <div class="pizza">
-            <img src="..\assets\img\h3-product-img-3a-150x150.png" alt="">
-            <p class="namePizza">VALDOSTANA</p>
-            <p class="price">$55.00</p>
+            <img src="" alt="">
+            <p class="namePizza"></p>
+            <p class="price"></p>
         </div>
         <div class="pizza">
-            <img src="..\assets\img\h3-product-img-4a-150x150.png" alt="">
-            <p class="namePizza">PIZZA TARTUFATA</p>
-            <p class="price">$45.00</p>
+            <img src="" alt="">
+            <p class="namePizza"></p>
+            <p class="price"></p>
         </div>
         <div class="pizza">
-            <img src="..\assets\img\h3-product-img-5a-150x150.png" alt="">
-            <p class="namePizza">FRANCESCANA</p>
-            <p class="price">$25.00</p>
-        </div>
-        <div class="pizza">
-            <img class="zoom" src="..\assets\img\h3-product-img-6a-100x100.png" alt="">
-            <p class="namePizza">CAMPAGNOLA</p>
-            <p class="price">$50.00 - $95.00</p>
-        </div>
+            <img class="zoom" src="" alt="">
+            <p class="namePizza"></p>
+            <p class="price"></p>
+        </div> -->
     </div>
 </template>
 
 <script>
 export default {
-    name:"TipeOfPizza"
+    name:"TipeOfPizza",
+    data(){
+      return {
+        pizzas: [
+          {
+            img: require('../assets/img/h3-product-img-1a-100x100.png'),
+            type: "BISMARK",
+            price: "$5.00 - $30.00",
+          },
+          {
+            img: require('../assets/img/h3-product-img-2a-150x150.png'),
+            type: "FIORI DI ZUCCA",
+            price: "$7.00 - $50.00",
+          },
+          {
+            img: require('../assets/img/h3-product-img-3a-150x150.png'),
+            type: "VALDOSTANA",
+            price: "$55.00",
+          },
+          {
+            img: require('../assets/img/h3-product-img-4a-150x150.png'),
+            type: "PIZZA TARTUFATA",
+            price: "$45.00",
+          },
+          {
+            img: require('../assets/img/h3-product-img-5a-150x150.png'),
+            type: "FRANCESCANA",
+            price: "$25.00",
+          },
+          {
+            img: require('../assets/img/h3-product-img-6a-100x100.png'),
+            type: "CAMPAGNOLA",
+            price: "$50.00 - $95.00",
+          },
+        ],
+      }
+    }
 }
 </script>
 

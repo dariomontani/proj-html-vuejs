@@ -9,26 +9,26 @@
                 </div>
             </div>
 
-            <div class="deal">
+            <div v-for="(deal, index) in deals" :key="index" class="deal">
                 <div class="date">
-                    <h1 class="red">02</h1>
-                    <h3 class="white">NOV</h3>
+                    <h1 class="red">{{deal.day}}</h1>
+                    <h3 class="white">{{deal.month}}</h3>
                 </div>
                 <div class="text">
-                    <h3 class="white">TRADITIONAL NEOPOLITAN PIES IN KYOTO PIZZA MERCATO</h3>
-                    <p class="red location">204 E. Pizzetta Tommaso</p>
+                    <h3 class="white">{{deal.title}}</h3>
+                    <p class="red location">{{deal.address}}</p>
                 </div>
             </div>
 
-            <hr>
+            <!-- <hr> -->
 
-            <div class="deal">
+            <!-- <div class="deal">
                 <div class="date">
                     <h1 class="red">03</h1>
                     <h3 class="white">NOV</h3>
                 </div>
                 <div class="text">
-                    <h3 class="white">TERARAZZA PATIO DINING SPACE OPENING THIS WEEKEND</h3>
+                    <h3 class="white"></h3>
                     <p class="red location">204 E. Pizzetta Tommaso</p>
                 </div>
             </div>
@@ -41,10 +41,10 @@
                     <h3 class="white">NOV</h3>
                 </div>
                 <div class="text">
-                    <h3 class="white">SIENNA PRIVATE DINING ROOM WITH STÉPHANE BRUNN</h3>
-                    <p class="red location">204 E. Pizzetta Tommaso</p>
+                    <h3 class="white"></h3>
+                    <p class="red location"></p>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="right">
             <img src="..\assets\img\h3-img-5a.jpg" alt="">
@@ -54,7 +54,31 @@
 
 <script>
 export default {
-    name:"DelishPizza"
+    name:"DelishPizza",
+    data(){
+        return{
+            deals: [
+                {
+                    day:"02",
+                    month:"NOV",
+                    title:"TRADITIONAL NEOPOLITAN PIES IN KYOTO PIZZA MERCATO",
+                    address:"204 E. Pizzetta Tommaso",
+                },
+                {
+                    day:"03",
+                    month:"NOV",
+                    title:"TERARAZZA PATIO DINING SPACE OPENING THIS WEEKEND",
+                    address:"204 E. Pizzetta Tommaso",
+                },
+                {
+                    day:"05",
+                    month:"NOV",
+                    title:"SIENNA PRIVATE DINING ROOM WITH STÉPHANE BRUNN",
+                    address:"204 E. Pizzetta Tommaso",
+                },
+            ],
+        }
+    }
 }
 </script>
 
